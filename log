@@ -1,1 +1,20 @@
 
+Fri Mar 11 19:55:12 HSP 2022: 
+test.c: In function 'suma':
+test.c:244:5: error: 'main' is normally a non-static function [-Werror=main]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+test.c:266:1: error: expected declaration or statement at end of input
+ }
+ ^
+At top level:
+test.c:244:5: error: 'main' defined but not used [-Werror=unused-function]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+In file included from test.c:5:0:
+exercises.c:20:5: error: 'sumaN' defined but not used [-Werror=unused-function]
+ int sumaN(int a[], int N) {
+     ^~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+910a96c
