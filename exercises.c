@@ -58,9 +58,7 @@ typedef struct {
 
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
-   Persona *vector = NULL;
-   vector = (Persona *) realloc(vector, sizeof(Persona));
-   return vector;
+   return NULL;
 }
 
 /*
