@@ -394,3 +394,19 @@ exercises.c:118:12: error: incompatible types when assigning to type 'Vector {ak
             ^
 Compilation failed
 84fcf4d
+Sat Mar 12 18:32:25 HSP 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaV':
+exercises.c:117:18: error: invalid type argument of unary '*' (have 'Vector {aka struct <anonymous>}')
+       int suma = *a[i] + *b[i];
+                  ^~~~~
+exercises.c:117:26: error: invalid type argument of unary '*' (have 'Vector {aka struct <anonymous>}')
+       int suma = *a[i] + *b[i];
+                          ^~~~~
+exercises.c:118:12: error: incompatible types when assigning to type 'Vector {aka struct <anonymous>}' from type 'int'
+       c[i] = suma;
+            ^
+Compilation failed
+7f9bd0c

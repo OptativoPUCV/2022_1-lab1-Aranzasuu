@@ -114,7 +114,7 @@ void sumaV(Vector * a, Vector * b, Vector * c) {
    int largo = a->capacidad;
    for(int i = 0; i < largo; i++)
    {
-      int suma = a[i] + b[i];
+      int suma = *a[i] + *b[i];
       c[i] = suma;
    }
 }
