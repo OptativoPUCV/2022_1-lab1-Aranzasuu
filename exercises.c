@@ -58,7 +58,14 @@ typedef struct {
 
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
-   return NULL;
+   Persona *vector = NULL;
+   vector = (Persona *) malloc(sizeof(Persona));
+
+   strcpy(vector->nombre, nombre);
+   strcpy(vector->rut, rut);
+   vector->edad = edad;
+
+   return vector;
 }
 
 /*
