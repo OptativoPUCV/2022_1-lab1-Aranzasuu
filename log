@@ -353,3 +353,21 @@ Sat Mar 12 15:08:19 HSP 2022:
  tests:  4|3
 total_score: 40/70
 3b96ef9
+Sat Mar 12 18:31:21 HSP 2022: 
+ exercises.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaV':
+exercises.c:115:23: error: 'capacidad' undeclared (first use in this function)
+    for(int i = 0; i < capacidad; i++)
+                       ^~~~~~~~~
+exercises.c:115:23: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:117:19: error: invalid operands to binary + (have 'Vector {aka struct <anonymous>}' and 'Vector {aka struct <anonymous>}')
+       c[i] = a[i] + b[i];
+              ~~~~ ^ ~~~~
+exercises.c:114:8: error: unused variable 'largo' [-Werror=unused-variable]
+    int largo = a->capacidad;
+        ^~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+96d64ef
