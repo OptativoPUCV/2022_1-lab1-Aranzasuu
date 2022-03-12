@@ -436,3 +436,16 @@ exercises.c:118:12: error: incompatible types when assigning to type 'Vector {ak
             ^
 Compilation failed
 949c562
+Sat Mar 12 18:35:20 HSP 2022: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaV':
+exercises.c:117:25: error: invalid operands to binary + (have 'Vector {aka struct <anonymous>}' and 'Vector {aka struct <anonymous>}')
+       int suma = (a[i]) + (b[i]);
+                  ~~~~~~ ^ ~~~~~~
+exercises.c:118:14: error: incompatible types when assigning to type 'Vector {aka struct <anonymous>}' from type 'int'
+       (c[i]) = suma;
+              ^
+Compilation failed
+d5e5f43
