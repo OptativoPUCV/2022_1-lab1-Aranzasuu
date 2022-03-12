@@ -125,8 +125,16 @@ Use las operaciones implementadas de vectores para
 sumar (a1,a2)+(b1+b2). Almacene el resultado en el vector c.
 */
 void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
-   int sumaA = a1 + b1;
-   int sumaB = a2 + b2;
-   c->datos[0] = sumaA;
-   c->datos[1] = sumaB;
+   int n = 2;
+   Vector *vectA = crearVector(n);
+   vectA->capacidad = n;
+   Vector *vectB = crearVector(n);
+   vectB->capacidad = n;
+
+   asignarValor(vectA,0,a1);
+   asignarValor(vectA,1,a2);
+   asignarValor(vectB,0,b1);
+   asignarValor(vectB,1,b2);
+
+   sumaV(vectA, vectB, c);
 }
