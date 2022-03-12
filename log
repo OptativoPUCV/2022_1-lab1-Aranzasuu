@@ -381,3 +381,16 @@ exercises.c:117:19: error: invalid operands to binary + (have 'Vector {aka struc
               ~~~~ ^ ~~~~
 Compilation failed
 7df865d
+Sat Mar 12 18:31:57 HSP 2022: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaV':
+exercises.c:117:23: error: invalid operands to binary + (have 'Vector {aka struct <anonymous>}' and 'Vector {aka struct <anonymous>}')
+       int suma = a[i] + b[i];
+                  ~~~~ ^ ~~~~
+exercises.c:118:12: error: incompatible types when assigning to type 'Vector {aka struct <anonymous>}' from type 'int'
+       c[i] = suma;
+            ^
+Compilation failed
+84fcf4d
