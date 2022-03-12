@@ -293,3 +293,20 @@ exercises.c:109:1: error: control reaches end of non-void function [-Werror=retu
 cc1.exe: all warnings being treated as errors
 Compilation failed
 fcc4a54
+Sat Mar 12 15:03:42 HSP 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'obtenerValor':
+exercises.c:105:4: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+    for(int j = 0; j = i; j++)
+    ^~~
+exercises.c:107:25: error: invalid type argument of unary '*' (have 'Vector {aka struct <anonymous>}')
+       if(j == i) return *(v)[j];
+                         ^~~~~~~
+exercises.c:109:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+ea8e6af
