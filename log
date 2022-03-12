@@ -371,3 +371,13 @@ exercises.c:114:8: error: unused variable 'largo' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 96d64ef
+Sat Mar 12 18:31:37 HSP 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaV':
+exercises.c:117:19: error: invalid operands to binary + (have 'Vector {aka struct <anonymous>}' and 'Vector {aka struct <anonymous>}')
+       c[i] = a[i] + b[i];
+              ~~~~ ^ ~~~~
+Compilation failed
+7df865d
