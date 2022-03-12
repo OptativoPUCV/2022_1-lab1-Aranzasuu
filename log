@@ -333,3 +333,17 @@ Sat Mar 12 15:04:13 HSP 2022:
  tests:  4|3
 total_score: 40/70
 089b7d1
+Sat Mar 12 15:07:55 HSP 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'obtenerValor':
+exercises.c:105:12: error: incompatible types when returning type 'Vector {aka struct <anonymous>}' but 'int' was expected
+    return v[i];
+           ~^~~
+exercises.c:106:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+cd736af
