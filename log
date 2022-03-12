@@ -568,3 +568,14 @@ exercises.c:93:7: error: suggest parentheses around assignment used as truth val
 cc1.exe: all warnings being treated as errors
 Compilation failed
 bffe76d
+Sat Mar 12 20:32:20 HSP 2022: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearVector':
+exercises.c:93:7: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+       if(lista->datos = NULL){
+       ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+ac61e30
