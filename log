@@ -465,3 +465,14 @@ exercises.c:118:7: error: invalid type argument of unary '*' (have 'Vector {aka 
        ^~~~~~~
 Compilation failed
 6bd9c07
+Sat Mar 12 18:36:02 HSP 2022: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaV':
+exercises.c:117:16: error: format '%d' expects argument of type 'int', but argument 2 has type 'Vector {aka struct <anonymous>}' [-Werror=format=]
+       printf("%d",a[i]);
+                ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+a725814
