@@ -270,3 +270,9 @@ c:\mingw\include\string.h:79:40: note: expected 'const char *' but argument is o
 cc1.exe: all warnings being treated as errors
 Compilation failed
 15dd3dd
+Sat Mar 12 14:25:50 HSP 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|3
+total_score: 40/70
+3984c4d
